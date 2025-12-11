@@ -26,34 +26,34 @@ All application data (users, products, cart, invoices) is stored using LocalStor
 
 <p>
   <b>Login</b>
-  Trn for username in the format [000-000-000]
-  password
+  Trn for username in the format [000-000-000] <br>
+  password <br>
 
-  <b>Register</b>
-  Firstname (letters only)
-  Lastname (letters only)
-  Gender (Select options)
-  TRN [000-000-000]
-  email (standard email format)
-  Phone Number 
-  Date of birth (18 years or older)
-  Password (8 or more characters)
-  Confirm Password (previously entered password)
+  <b>Register</b><br>
+  Firstname (letters only) <br>
+  Lastname (letters only)<br>
+  Gender (Select options)<br>
+  TRN [000-000-000]<br>
+  email (standard email format)<br>
+  Phone Number <br>
+  Date of birth (18 years or older)<br>
+  Password (8 or more characters)<br>
+  Confirm Password (previously entered password)<br>
 
-  <b>Shipping Form</b>
-  country (select options)
-  firstname (letters only)
-  lastname (letters only)
-  street 
-  city
-  zip code (5 digits)
-  phone number 
+  <b>Shipping Form</b><br>
+  country (select options)<br>
+  firstname (letters only)<br>
+  lastname (letters only)<br>
+  street <br>
+  city<br>
+  zip code (5 digits)<br>
+  phone number <br>
   
-  <b>Payment Form</b>
-  Card Type (select option)
-  Name on Card (letters only)
-  Expiry Date (Dates older than the current day)
-  CVV (3 digits)
-  Card Number (numbers only)
+  <b>Payment Form</b><br>
+  Card Type (select option)<br>
+  Name on Card (letters only)<br>
+  Expiry Date (Dates older than the current day)<br>
+  CVV (3 digits)<br>
+  Card Number (numbers only)<br>
   
 </p>
