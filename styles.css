@@ -21,7 +21,7 @@ Friday @7pm
 }
 /*1.a element selector*/
 body{
-    background-image: url('/Assets/background.jpg');
+    background-image: url('Assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -262,4 +262,5 @@ span:hover{
         display: none; /* hides all buttons when printing */
     }
 }
+
 
