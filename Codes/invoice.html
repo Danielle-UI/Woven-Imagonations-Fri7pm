@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Danielle Simpson - 2306918
+Rodane Baugh 2205798
+Ashleigh Allwood 1401887
+Web Programming: CIT2011
+Friday @7pm-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Invoice</title>
+</head>
+<body id="invoicePage">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="product.html"><i class="material-icons">home</i></a></li>
+                <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                <li><a href="invoice.html"><i class="material-icons">receipt_long</i></a></li>
+            </ul>
+        </nav>
+        <h1>Your Invoices</h1>
+    </header>
+    <main>
+        <br>
+        <input type="text" id="search" placeholder="Enter TRN to search 000-000-000">
+        <button onclick="GetUserInvoices()">Get Invoice</button><br><br>
+        <button onclick="ShowInvoices()">Show All Invoices</button>
+
+        <br>
+        <br>
+        <div id="user_invoices"></div>
+    </main>
+
+
+    
+    <script src="../script.js"></script>
+</body>
+</html>

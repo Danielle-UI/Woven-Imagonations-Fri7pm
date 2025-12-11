@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Danielle Simpson - 2306918
+Rodane Baugh 2205798
+Ashleigh Allwood 1401887
+Web Programming: CIT2011
+Friday @7pm-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 3.a css correctly linked-->
+    <link rel="stylesheet" href="../styles.css">
+    <!--Material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Welcome</title>
+</head>
+<body id="indexPage">
+    <!--Login form-->
+    <section id="login">
+        <img src="../Assets/logo.png" alt="woven imaginations logo" height="30%">
+
+        <form action="">
+            <h1>Welcome Back</h1>
+            <p>We've missed you, login to continue shopping</p>
+            <label for="name">TRN #</label>
+            <input type="text" id="loginuser" placeholder="Enter your TRN" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="pwd" id="loginpassword" placeholder="Enter your password" required>
+            <br>
+            <div>
+                <button id="login_submit" type="button">Login In</button>
+                <button type="reset">Cancel</button>
+                <button id="guest"><b>Guest User</b></button>
+            </div>
+            
+            <p>Don't have an account? <span id="lsignup">Sign Up</span></p>
+            <p>Forgot Password? <span id="forget">Reset Password</span></p>
+
+        </form>
+        
+    </section>
+    <!-- 3.a Js correctly linked-->
+    <script src="../script.js"></script>
+    
+</body>
+</html>

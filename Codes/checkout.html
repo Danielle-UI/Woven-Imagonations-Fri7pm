@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Danielle Simpson - 2306918
+Rodane Baugh 2205798
+Ashleigh Allwood 1401887
+Web Programming: CIT2011
+Friday @7pm-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 3.a css correctly linked-->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Checkout</title>
+</head>
+
+<body id="checkoutPage">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="product.html"><i class="material-icons">home</i></a></li>
+                <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                <li><a href="invoice.html"><i class="material-icons">receipt_long</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--form for shipping address and card info-->
+    <div class="checkoutpage">
+    <form class="shippingform">
+        <!--Shipping details form Section-->
+        <div>
+            <h2>Shipping Details</h2>
+
+            <label for="address">Country:</label><br>
+            <select id="address" name="address" required>
+                <option value="" disabled selected>--Select Country--</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="JM">Jamaica</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+            <br><br>
+
+            <div class="formatting">
+                <div>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" maxlength="80" required><br><br>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" maxlength="80" required><br><br>
+                </div>
+                
+            </div>
+            
+            <label for="street">Street:</label><br>
+            <input type="text" id="street" name="street" maxlength="100" required><br><br>
+
+            <div class="formatting">
+                <div>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city" maxlength="100" required><br><br>
+                </div>
+                <div>
+                    <label for="zip">ZIP Code:</label><br>
+                    <input type="number" id="zip" name="zip" required><br><br>
+                </div>
+            </div>
+
+            <label for="number">Phone Number</label><br><br>
+            <input type="number" placeholder="eg. 8761234567" id="phone" >
+        </div>
+
+        <br><hr><br>
+        <!--Payment Form Section-->
+        <div>
+            <h2>Payment Information</h2>
+
+            <label for="cardtype">Card Type:</label><br>
+            <select id="cardtype" name="cardtype" required>
+                <option value="" disabled selected>--Select--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+                <option value="discover">Discover</option>
+            </select><br><br>
+
+            <label for="cardname">Name on Card:</label><br>
+            <input type="text" id="cardname" name="cardname" required><br><br>
+
+            <div class="formatting">
+                <div>
+                    <label for="expiry">Expiry Date:</label><br>
+                    <input type="month" id="expiry" name="expiry" placeholder="MM/YY" required><br><br>
+                </div>
+                <div>
+                    <label for="cvv">CVV:</label><br>
+                    <input type="number" id="cvv" name="cvv" required><br><br>
+                </div>
+            </div>
+
+            <label for="cardnumber">Card Number:</label><br>
+            <input type="number" id="cardnumber" name="cardnumber" placeholder="1234567890123" required><br><br>
+
+            <div>
+                <button type="button" id="placebtn">Place Order</button>
+                <button type="reset">Clear Form</button>
+                <button type="button" id="closebtn">Cancel</button>
+            </div>
+            
+        </div>
+        
+    </form>
+    <!--Order Summary section-->
+    <section class="proceed">
+        <h2>Order Summary</h2>
+        <div id="summary">
+            
+        </div>
+
+        <div id="checkoutamt">
+
+        </div>
+
+    </section>
+    </div>
+    <!-- 3.a Js correctly linked-->
+    <script src="../script.js"></script>
+    
+</body>
+</html>

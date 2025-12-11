@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Danielle Simpson - 2306918
+Rodane Baugh 2205798
+Ashleigh Allwood 1401887
+Web Programming: CIT2011
+Friday @7pm-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Registration</title>
+</head>
+<body id="registerPage">
+    <!--Registration Form-->
+    <section id="registration">
+        <img src="../Assets/logo.png" alt="woven imaginations logo" height="30%">
+        <form action="">
+            <h1>Join our Family</h1>
+            <p>Create your account to find handmade treasures.</p>
+
+            
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Enter your First Name" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Enter your Surname" required>
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>-- Please select --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Rather not say</option>
+            </select>
+
+            <label for="name">TRN #</label>
+            <input type="text" id="trn" placeholder="Enter your TRN" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+
+            <label for="number">Phone Number</label>
+            <input type="number" placeholder="eg. 8761234567" id="phoneNum" >
+
+            <label for="dob">Date of Birth</label>
+            <input type="Date" id="dob" placeholder="Enter your DOB" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="pwd" id="signuppassword" placeholder="Enter your password" required>
+
+            <label for="conpassword">Confirm Password</label>
+            <input type="password" name="conpwd" id="confirmpassword" placeholder="Confirm your password" required>
+            
+            <br>
+            <div class="welcbtns">
+                <button id="signup_submit" type="button">Register</button>
+                <button type="reset">Cancel</button>
+            </div>
+            
+            <p>Already have an account? <span id="slogin">Login</span></p>
+        </form>
+        
+    </section>
+    <!-- 3.a Js correctly linked-->
+    <script src="../script.js"></script>
+</body>
+</html>
