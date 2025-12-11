@@ -284,7 +284,7 @@ if(document.body.id === 'cartPage'){
                 const productitem = document.createElement('div');
                 productitem.innerHTML = `
                     <div class="cart_items">
-                    <img src="../Assets/${product.image}" alt="${product.name}" class="cartimg">
+                    <img src="Assets/${product.image}" alt="${product.name}" class="cartimg">
                     <br>
                     <div>
                         <h3>${product.name}</h3><br>
@@ -371,7 +371,7 @@ if(document.body.id === 'checkoutPage'){
                 const productitem = document.createElement('div');
                 productitem.innerHTML = `
                     <div>
-                    <img src="../Assets/${product.image}" alt="${product.name}" class="cartimg">
+                    <img src="Assets/${product.image}" alt="${product.name}" class="cartimg">
                     <br>
                     <div>
                         <p>${product.name} [qty:${product.quantity}]</p>
@@ -565,7 +565,7 @@ if(document.body.id === 'invoicePage'){
 
             allOrdersHTML += `
                 <div class="proceed" id="order_${i}">
-                    <img src="../Assets/logo.png" alt="woven imaginations logo" height="180px">
+                    <img src="Assets/logo.png" alt="woven imaginations logo" height="180px">
                     <br>
                     <h3>Order #${(i + 1).toString().padStart(3, "0")}</h3>
 
@@ -656,7 +656,7 @@ function ShowUserFrequency(){
         const barWidth = count * 50; // 50px per user
         genderGraph += `
             <p>${i}: ${count}</p>
-            <img src="../Assets/bar.jpg" width="${barWidth}px" height="30px"/>
+            <img src="Assets/bar.jpg" width="${barWidth}px" height="30px"/>
             <br><br>
         `;
     }
@@ -669,7 +669,7 @@ function ShowUserFrequency(){
         const barWidth = count * 50; // 50px per user
         ageGrap += `
             <p>${i}: ${count}</p>
-            <img src="../Assets/bar.jpg" width="${barWidth}px" height="30px"/>
+            <img src="Assets/bar.jpg" width="${barWidth}px" height="30px"/>
             <br><br>
         `;
     }
@@ -737,4 +737,5 @@ resetpwd.addEventListener('click', () => {
     // SIMPLE RESET: show the password
     alert("Your password is: ${foundUser.password}");
 });
+
 
