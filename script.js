@@ -714,3 +714,27 @@ function GetUserInvoices(){
         console.log(`No user found with TRN ${trn}.`);
     }
 }
+
+// -------------------------
+// FORGOT PASSWORD FEATURE
+// -------------------------
+resetpwd.addEventListener('click', () => {
+    const trn = prompt("Enter your TRN to reset password:");
+
+    if (!trn || trn.trim() === "") {
+        alert("TRN is required.");
+        return;
+    }
+
+    const users = JSON.parse(localStorage.getItem('RegistrationData')) || [];
+    const foundUser = users.find(u => u.username === trn.trim());
+
+    if (!foundUser) {
+        alert("No account found with that TRN.");
+        return;
+    }
+
+    // SIMPLE RESET: show the password
+    alert("Your password is: ${foundUser.password}");
+});
+
