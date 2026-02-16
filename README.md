@@ -1,5 +1,4 @@
 # Woven-Imagonations
-Group Member details<br>
 Danielle Simpson - 2306918<br>
 
 <p>This project is a simple web-based Crochet Store application that allows users to:
