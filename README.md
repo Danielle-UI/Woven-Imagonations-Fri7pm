@@ -1,8 +1,6 @@
-# Woven-Imagonations-Fri7pm
+# Woven-Imagonations
 Group Member details<br>
 Danielle Simpson - 2306918<br>
-Rodane Baugh 2205798<br>
-Ashleigh Allwood 1401887
 
 <p>This project is a simple web-based Crochet Store application that allows users to:
 
